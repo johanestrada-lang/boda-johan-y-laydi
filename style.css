@@ -104,7 +104,7 @@ p {
 /* --- MARCOS FLORALES Y SECCIONES ESPECIALES --- */
 .floral-top {
     height: 120px;
-    background-image: url('https://i.ibb.co/6Yh0T79/floral-top-placeholder.png'); /* Puedes reemplazarlo con flores acuarela */
+    background-image: url('marco-superior.png'); /* Puedes reemplazarlo con flores acuarela */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
@@ -112,7 +112,7 @@ p {
 
 .floral-bottom {
     height: 120px;
-    background-image: url('marco-superior.png');
+    background-image: url('https://i.ibb.co/HqG9k7m/floral-bottom-placeholder.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom center;
