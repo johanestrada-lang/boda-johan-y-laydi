@@ -129,7 +129,7 @@ p {
 }
 
 /* Cambia estos enlaces placeholder por fotos reales de los novios */
-.hero-image-1 { background-image: url('foto-portada.jpg'); }
+.hero-image-1 { background-image: url('foto-portada1.jpg'); }
 .hero-image-2 { background-image: url('https://picsum.photos/id/366/600/800'); }
 .hero-image-3 { background-image: url('https://picsum.photos/id/375/600/800'); }
 
