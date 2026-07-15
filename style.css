@@ -103,11 +103,18 @@ p {
 
 /* --- MARCOS FLORALES Y SECCIONES ESPECIALES --- */
 .floral-top {
-    height: 120px;
+    height: 180px;
     background-image: url('marco-superior.png'); /* Puedes reemplazarlo con flores acuarela */
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+    width: 100%;
+}
+
+.header-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important; /* Esto hará que las flores peguen completamente arriba */
 }
 
 .floral-bottom {
