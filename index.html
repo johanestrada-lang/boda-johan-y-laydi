@@ -3,223 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda - Laydi & Johan</title>
+    <title>Nuestra Boda | NOMBRE & NOMBRE</title>
     
-    <!-- Fuentes elegantes de Google Fonts -->
+    <!-- Fuentes premium y elegantes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     
     <!-- Archivo de estilos externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Música de fondo (Opcional) -->
+    <!-- Música de fondo: "Por Toda la Vida - Fonseca" -->
+    <!-- Nota: Sube un archivo de audio llamado 'musica.mp3' a tu GitHub en la misma carpeta raíz -->
     <audio id="bg-music" loop>
-        <source src="cancion.mp3" type="audio/mpeg">
+        <source src="musica.mp3" type="audio/mpeg">
     </audio>
 
     <div class="invitation-container">
         
-        <!-- SECCIÓN 1: Portada con música -->
-        <section class="section header-section">
-            <div class="floral-top"></div>
-            <p class="subtitle">¡Nos Casamos!</p>
-            <h1 class="main-title">Laydi</h1>
-            <p class="and">&</p>
-            <h1 class="main-title">Johan</h1>
+        <!-- SECCIÓN 1: Portada y Reproductor -->
+        <section class="section hero-section">
+            <div class="gold-corner top-left"></div>
+            <div class="gold-corner top-right"></div>
             
-            <p class="music-instruction">Presiona el Corazón para escuchar nuestra canción</p>
-            <div class="music-controls">
+            <p class="pre-title">¡NOS CASAMOS!</p>
+            <h1 class="couple-names">Novio <br><span class="and-symbol">&</span><br> Novia</h1>
+            
+            <p class="music-instruction">Presiona el corazón dorado para escuchar nuestra canción</p>
+            <div class="music-player">
                 <button class="music-btn" id="play-pause-btn">♥</button>
+                <span class="song-title">Por Toda la Vida - Fonseca</span>
             </div>
             
-            <div class="hero-image-1"></div>
+            <!-- Foto de portada vertical -->
+            <div class="hero-image border-gold-glow"></div>
+            
+            <div class="gold-corner bottom-left"></div>
+            <div class="gold-corner bottom-right"></div>
         </section>
 
         <!-- SECCIÓN 2: Versículo y Padres -->
-        <section class="section text-section">
-            <blockquote class="bible-verse">
-                "El amor es sufrido, es benigno... Todo lo sufre, todo lo cree, todo lo espera, todo lo soporta."
-                <span>1 Corintios 13:4-7</span>
+        <section class="section family-section">
+            <div class="divider-gold"></div>
+            <blockquote class="wedding-verse">
+                "El amor es paciente, es servicial; el amor no es envidioso... todo lo cree, todo lo espera, todo lo soporta."
+                <cite>1 Corintios 13:4-7</cite>
             </blockquote>
+            <div class="divider-gold"></div>
             
-            <div class="blessing-container">
-                <p class="blessing-title">Con la bendición de Dios y nuestros queridos padres</p>
-                
-                <div class="parents-grid">
-                    <div class="parents-block">
-                        <h3>Padres de la Novia</h3>
-                        <p>Claudio Cruz</p>
-                        <p>Cornelia Mamani</p>
-                    </div>
-                    <div class="parents-block">
+            <div class="parents-container">
+                <h2 class="section-title">Con la bendición de nuestros padres</h2>
+                <div class="parents-row">
+                    <div class="parents-column">
                         <h3>Padres del Novio</h3>
-                        <p>Gilberto Estrada</p>
-                        <p>Zunilda Alata</p>
+                        <p>Nombre del Padre</p>
+                        <p>Nombre de la Madre</p>
+                    </div>
+                    <div class="parents-column">
+                        <h3>Padres de la Novia</h3>
+                        <p>Nombre del Padre</p>
+                        <p>Nombre de la Madre</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="witnesses-block">
-                    <h3>En compañía de nuestros testigos</h3>
-                    <p>Roberto Peralta</p>
-                    <p>Astrid Montenegro</p>
-                </div>
+            <div class="witnesses-container">
+                <h3>Nuestros Testigos</h3>
+                <p>Nombre del Testigo 1</p>
+                <p>Nombre del Testigo 2</p>
             </div>
         </section>
 
         <!-- SECCIÓN 3: Segunda Foto e Invitación -->
-        <section class="section image-section">
-            <div class="hero-image-2"></div>
-            <div class="wedding-invite-text">
-                <div class="rings-icon">💍</div>
-                <p>Tenemos el agrado de invitarlos a nuestra boda</p>
+        <section class="section invite-section">
+            <div class="hero-image-2 border-gold-glow"></div>
+            <div class="invite-content">
+                <p class="invite-text">Tenemos el honor de invitarlos a compartir la alegría de nuestro enlace civil y religioso.</p>
                 
-                <div class="date-container">
-                    <div class="date-side">Sábado</div>
-                    <div class="date-center">26 <br><span>Setiembre 2026</span></div>
-                    <div class="date-side">2026</div>
+                <div class="wedding-date-block">
+                    <p class="month">FEBRERO</p>
+                    <div class="date-row">
+                        <div class="date-day-name">SÁBADO</div>
+                        <div class="date-number">21</div>
+                        <div class="date-year">2026</div>
+                    </div>
                 </div>
 
-                <!-- Enlace dinámico para agendar la fecha en Google Calendar -->
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Sof%C3%ADa+y+Mateo&dates=20260221T220000Z/20260222T040000Z&details=¡Acompáñanos+en+nuestro+gran+día!&location=Iglesia+Luz+del+Mundo" target="_blank" class="btn btn-secondary">Agendar fecha</a>
+                <!-- Botón dinámico para agendar la boda en Google Calendar -->
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Novio+y+Novia&dates=20260221T220000Z/20260222T040000Z&details=¡Te+esperamos+en+nuestro+gran+día!&location=Ubicacion+de+la+Iglesia" target="_blank" class="btn btn-gold">Agendar Fecha</a>
             </div>
         </section>
 
         <!-- SECCIÓN 4: Cuenta Regresiva -->
         <section class="section countdown-section">
-            <h2 class="section-title">Momentos faltan...</h2>
-            <div class="countdown-display">
-                <div class="time-block">
+            <h2 class="section-title">MOMENTOS FALTAN...</h2>
+            <div class="countdown-grid">
+                <div class="time-box">
                     <span id="days">00</span>
-                    <label>Días</label>
+                    <p>Días</p>
                 </div>
-                <div class="time-block">
+                <div class="time-box">
                     <span id="hours">00</span>
-                    <label>Horas</label>
+                    <p>Hrs</p>
                 </div>
-                <div class="time-block">
+                <div class="time-box">
                     <span id="minutes">00</span>
-                    <label>Minutos</label>
+                    <p>Min</p>
                 </div>
-                <div class="time-block">
+                <div class="time-box">
                     <span id="seconds">00</span>
-                    <label>Segundos</label>
+                    <p>Seg</p>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 5: Ceremonia y Recepción con Google Maps -->
-        <section class="section details-section">
-            <div class="detail-block">
-                <div class="detail-icon">⛪</div>
-                <h2>Ceremonia Cristiana</h2>
-                <p><strong>Hora:</strong> 5:00 pm</p>
-                <p>Iglesia "Luz del Mundo"</p>
-                <p class="address">Av. San Martín 456, Ciudad</p>
-                <!-- Reemplaza con el enlace real de la ubicación de tu iglesia -->
-                <a href="https://maps.google.com/?q=Iglesia+Luz+del+Mundo" target="_blank" class="btn btn-primary">📍 Ver Mapa</a>
+        <!-- SECCIÓN 5: Ubicaciones e Itinerario -->
+        <section class="section locations-section">
+            <div class="location-card">
+                <div class="location-icon">⛪</div>
+                <h2>Ceremonia Religiosa</h2>
+                <p class="time">Hora: 5:00 PM</p>
+                <p class="place-name">Iglesia Luz del Mundo</p>
+                <p class="address">Dirección de la iglesia #123, Ciudad</p>
+                <!-- Reemplaza con tu enlace real de Google Maps -->
+                <a href="https://maps.google.com" target="_blank" class="btn btn-blue">Ver Ubicación</a>
             </div>
 
-            <div class="detail-block" style="margin-top: 40px;">
-                <div class="detail-icon">🏢</div>
+            <div class="location-card" style="margin-top: 50px;">
+                <div class="location-icon">🍷</div>
                 <h2>Recepción</h2>
-                <p><strong>Hora:</strong> 7:30 pm</p>
-                <p>Salón de Eventos "La Mansión"</p>
-                <p class="address">Calle Los Jazmines 789, Ciudad</p>
-                <!-- Reemplaza con el enlace real de la ubicación de tu recepción -->
-                <a href="https://maps.google.com/?q=Salon+de+Eventos+La+Mansion" target="_blank" class="btn btn-primary">📍 Ver Mapa</a>
+                <p class="time">Hora: 7:30 PM</p>
+                <p class="place-name">Salón de Eventos "La Mansión"</p>
+                <p class="address">Dirección del salón de eventos #456, Ciudad</p>
+                <!-- Reemplaza con tu enlace real de Google Maps -->
+                <a href="https://maps.google.com" target="_blank" class="btn btn-blue">Ver Ubicación</a>
             </div>
         </section>
 
         <!-- SECCIÓN 6: Código de Vestimenta e Itinerario -->
-        <section class="section itinerary-section">
-            <h2>Dress Code</h2>
-            <p class="dress-style">Elegante</p>
-            <div class="dress-icon">👔👗</div>
-            <p class="dress-note">Reservar el color blanco exclusivamente para la novia.</p>
+        <section class="section dress-itinerary-section">
+            <div class="dress-code">
+                <h2>Dress Code</h2>
+                <p class="dress-style">Elegante</p>
+                <div class="dress-icons">👔 👗</div>
+                <p class="dress-rules">Reservar el color blanco exclusivamente para la novia.</p>
+            </div>
 
-            <h2 style="margin-top: 40px;">Itinerario</h2>
-            <div class="timeline">
-                <div class="timeline-item"><strong>5:00 p.m.</strong> Ceremonia Religiosa</div>
-                <div class="timeline-item"><strong>7:30 p.m.</strong> Recepción</div>
-                <div class="timeline-item"><strong>8:45 p.m.</strong> Brindis</div>
-                <div class="timeline-item"><strong>9:00 p.m.</strong> Vals</div>
-                <div class="timeline-item"><strong>9:30 p.m.</strong> Cena</div>
+            <div class="itinerary-timeline">
+                <h2>Itinerario</h2>
+                <div class="timeline">
+                    <div class="timeline-step">
+                        <span class="step-time">5:00 PM</span>
+                        <p class="step-desc">Ceremonia Religiosa</p>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-time">7:30 PM</span>
+                        <p class="step-desc">Recepción & Bienvenida</p>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-time">8:45 PM</span>
+                        <p class="step-desc">Brindis de Honor</p>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-time">9:00 PM</span>
+                        <p class="step-desc">Primer Baile de Novios</p>
+                    </div>
+                    <div class="timeline-step">
+                        <span class="step-time">9:30 PM</span>
+                        <p class="step-desc">Cena de Gala</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 7: Regalos, Buzón y Canciones -->
+        <!-- SECCIÓN 7: Regalos y Dinámicas -->
         <section class="section gifts-section">
-            <div class="gift-icon">🎁</div>
-            <h2>Regalos</h2>
-            <p>Si deseas hacernos un obsequio, ponemos a tu disposición nuestras cuentas:</p>
-            <div class="gifts-btn-group">
-                <button onclick="openModal('bank-modal')" class="btn btn-primary">Datos Bancarios</button>
+            <div class="gift-block">
+                <div class="gift-icon">🎁</div>
+                <h2>Regalos</h2>
+                <p>Su presencia es nuestro mayor regalo. Si desean realizarnos un obsequio, los invitamos a apoyarnos a través de nuestra cuenta bancaria.</p>
+                <button onclick="openModal('bank-modal')" class="btn btn-gold">Datos Bancarios</button>
             </div>
 
-            <div class="interactive-option" style="margin-top: 40px;">
-                <div class="gift-icon">✉️</div>
+            <div class="gift-block" style="margin-top: 50px;">
+                <div class="gift-icon">✍️</div>
                 <h2>Buzón de Deseos</h2>
-                <p>Déjanos un mensaje lleno de cariño que guardaremos en nuestro corazón.</p>
-                <!-- Reemplaza con el enlace de tu Google Forms de deseos -->
-                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_deseos/viewform" target="_blank" class="btn btn-primary">Click Aquí</a>
+                <p>Nos haría muy felices leer sus buenos deseos para nuestra nueva etapa juntos.</p>
+                <!-- Reemplaza con el enlace real de tu Google Forms de Deseos -->
+                <a href="https://docs.google.com/forms/d/e/TU-FORM-ID-DESEOS/viewform" target="_blank" class="btn btn-blue">Escribir Mensaje</a>
             </div>
 
-            <div class="interactive-option" style="margin-top: 40px;">
+            <div class="gift-block" style="margin-top: 50px;">
                 <div class="gift-icon">🎵</div>
                 <h2>Sugerencia de Canciones</h2>
-                <p>¿Qué canción no puede faltar en la pista de baile?</p>
-                <!-- Reemplaza con el enlace de tu Google Forms de canciones -->
-                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_canciones/viewform" target="_blank" class="btn btn-primary">Click Aquí</a>
+                <p>¿Qué canciones no deberían faltar en la fiesta? ¡Ayúdanos a armar el playlist!</p>
+                <!-- Reemplaza con el enlace real de tu Google Forms de Canciones -->
+                <a href="https://docs.google.com/forms/d/e/TU-FORM-ID-CANCIONES/viewform" target="_blank" class="btn btn-blue">Proponer Canciones</a>
             </div>
         </section>
 
-        <!-- SECCIÓN 8: No Niños y Confirmación de Asistencia -->
-        <section class="section confirmation-section">
-            <div class="no-kids">
+        <!-- SECCIÓN 8: No niños y RSVP -->
+        <section class="section rsvp-section">
+            <div class="kids-warning">
                 <h2>No niños</h2>
-                <p>Aunque amamos a los niños, esta será una celebración de adultos.</p>
+                <p>Agradecemos su comprensión por realizar un evento exclusivo para adultos.</p>
             </div>
 
-            <div class="rsvp-container">
-                <h2>Confirmar asistencia</h2>
-                <p>Por favor confírmanos tu asistencia antes del 10 de febrero.</p>
-                <!-- Reemplaza con el enlace de tu Google Forms de asistencia detallada -->
-                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_asistencia/viewform" target="_blank" class="btn btn-primary">Confirmar Aquí</a>
+            <div class="rsvp-card">
+                <h2>Confirmar Asistencia</h2>
+                <p>Por favor, confírmanos tu presencia antes del 10 de febrero de 2026 completando nuestro formulario.</p>
+                <!-- Reemplaza con el enlace real de tu Google Forms de Asistencia -->
+                <a href="https://docs.google.com/forms/d/e/TU-FORM-ID-ASISTENCIA/viewform" target="_blank" class="btn btn-gold">Confirmar Aquí</a>
             </div>
         </section>
 
-        <!-- SECCIÓN 9: Cierre de Invitación -->
+        <!-- SECCIÓN 9: Despedida -->
         <section class="section footer-section">
-            <div class="hero-image-3"></div>
-            <div class="monogram">S & M</div>
-            <p class="final-text">¡Te Esperamos!</p>
-            <div class="floral-bottom"></div>
+            <div class="gold-corner top-left"></div>
+            <div class="gold-corner top-right"></div>
+            
+            <div class="hero-image-3 border-gold-glow"></div>
+            <div class="monogram-circle">N & N</div>
+            <p class="final-words">¡Gracias por ser parte de nuestra historia!</p>
+            
+            <div class="gold-corner bottom-left"></div>
+            <div class="gold-corner bottom-right"></div>
         </section>
 
     </div>
 
-    <!-- VENTANA EMERGENTE (Modal de Cuentas Bancarias) -->
+    <!-- VENTANA MODAL (Cuentas Bancarias) -->
     <div id="bank-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('bank-modal')">&times;</span>
-            <h2>Datos Bancarios</h2>
-            <div class="account-details">
-                <p><strong>Banco Interbank</strong></p>
-                <p>Cuenta: 123-4567890-1-12</p>
-                <p>CCI: 003-123-4567890112-12</p>
-                <p>A nombre de: Sofía Salazar</p>
-                <hr>
-                <p><strong>Banco BCP</strong></p>
-                <p>Cuenta: 987-6543210-0-98</p>
-                <p>A nombre de: Mateo Díaz</p>
+            <h2 class="modal-title">Lluvia de Sobres</h2>
+            <p class="modal-intro">Si desean hacernos un presente, les dejamos nuestras cuentas oficiales:</p>
+            
+            <div class="bank-details">
+                <div class="bank-item">
+                    <p class="bank-name">Banco BCP</p>
+                    <p class="bank-account">Cuenta Corriente: 191-XXXXXXXX-X-XX</p>
+                    <p class="bank-cci">CCI: 002-191-XXXXXXXXXXXX-XX</p>
+                    <p class="bank-owner">Titular: Nombre Completo</p>
+                </div>
+                <hr class="modal-divider">
+                <div class="bank-item">
+                    <p class="bank-name">Yape / Plin</p>
+                    <p class="bank-account">Celular: +51 987 654 321</p>
+                    <p class="bank-owner">Titular: Nombre Completo</p>
+                </div>
             </div>
+            
+            <p class="modal-thanks">¡De todo corazón, muchas gracias!</p>
         </div>
     </div>
 
-    <!-- Archivo lógico de JS -->
+    <!-- Archivo lógico JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
