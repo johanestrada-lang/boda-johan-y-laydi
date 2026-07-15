@@ -3,305 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Boda</title>
+    <title>Boda - Sofía & Mateo</title>
+    
     <!-- Fuentes elegantes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <style>
-        /* Estilos Generales */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f4f4f6;
-            color: #555555;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-        
-        /* Contenedor tipo Celular (Tarjetero) */
-        .invitation-container {
-            width: 100%;
-            max-width: 450px;
-            background-color: #ffffff;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Cabecera con Foto Principal */
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 300px;
-            background-image: url('https://picsum.photos/id/319/800/600'); /* Reemplaza por el URL de tu foto */
-            background-size: cover;
-            background-position: center;
-        }
-        /* Efecto de papel rasgado simulado */
-        .hero::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 40px;
-            background-color: #ffffff;
-            clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 85% 85%, 70% 35%, 55% 75%, 40% 30%, 25% 80%, 10% 45%, 0% 90%);
-        }
-
-        /* Secciones */
-        .section {
-            padding: 40px 25px;
-            text-align: center;
-        }
-
-        /* Tipografías y Títulos */
-        h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: 3rem;
-            color: #8fa0b5;
-            margin-bottom: 10px;
-            font-weight: normal;
-        }
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #708090;
-            margin-bottom: 20px;
-            font-weight: 400;
-        }
-        p {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #666666;
-            margin-bottom: 20px;
-        }
-
-        /* Íconos decorativos */
-        .icon {
-            font-size: 2.5rem;
-            color: #a4b4c4;
-            margin-bottom: 15px;
-        }
-
-        /* Botones Elegantes */
-        .btn {
-            display: inline-block;
-            background-color: #8fa0b5;
-            color: #ffffff;
-            padding: 12px 30px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 600;
-            transition: background 0.3s ease;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(143, 160, 181, 0.3);
-        }
-        .btn:hover {
-            background-color: #73859b;
-        }
-
-        /* Sección Fecha y Calendario */
-        .date-grid {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin: 25px 0;
-            font-size: 1.1rem;
-            color: #555;
-        }
-        .date-day {
-            font-size: 2rem;
-            font-weight: 600;
-            color: #8fa0b5;
-            border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            padding: 0 15px;
-        }
-
-        /* Contador Regresivo */
-        .countdown {
-            display: flex;
-            justify-content: space-around;
-            margin: 30px 0;
-            background-color: #f8fafc;
-            padding: 15px 10px;
-            border-radius: 10px;
-        }
-        .countdown-item {
-            text-align: center;
-        }
-        .countdown-time {
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #8fa0b5;
-            display: block;
-        }
-        .countdown-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #999;
-        }
-
-        /* Ventanas Emergentes (Modales) */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.5);
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        .modal-content {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            max-width: 400px;
-            width: 100%;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-        }
-        .close-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #999;
-        }
-        
-        /* Detalles finales */
-        .divider {
-            height: 1px;
-            background: radial-gradient(circle, #ccc 0%, rgba(255,255,255,0) 70%);
-            margin: 10px 0;
-        }
-    </style>
+    <!-- Archivo de estilos externo -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Música de fondo (Opcional) -->
+    <audio id="bg-music" loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+
     <div class="invitation-container">
         
-        <!-- Foto de Portada -->
-        <div class="hero"></div>
-
-        <!-- Sección de Bienvenida -->
-        <div class="section">
-            <h1>Nuestra Boda</h1>
-            <p>Tenemos el agrado de invitarlos a celebrar el inicio de nuestra nueva aventura juntos.</p>
-            <div class="divider"></div>
-        </div>
-
-        <!-- Sección de Fecha y Cuenta Regresiva -->
-        <div class="section" style="background-color: #fbfbfb;">
-            <h2>Cuándo & Dónde</h2>
-            <div class="date-grid">
-                <div>Sábado</div>
-                <div class="date-day">21</div>
-                <div>Febrero<br><small>2026</small></div>
+        <!-- SECCIÓN 1: Portada con música -->
+        <section class="section header-section">
+            <div class="floral-top"></div>
+            <p class="subtitle">¡Nos Casamos!</p>
+            <h1 class="main-title">Sofía</h1>
+            <p class="and">&</p>
+            <h1 class="main-title">Mateo</h1>
+            
+            <p class="music-instruction">Presiona el Corazón para escuchar nuestra canción</p>
+            <div class="music-controls">
+                <button class="music-btn" id="play-pause-btn">♥</button>
             </div>
             
-            <!-- Cambia esta URL por tu enlace personalizado de Google Calendar -->
-            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+de+Bety+y+Carlos&dates=20260221T220000Z/20260222T040000Z&details=¡Te+esperamos+en+nuestro+gran+día!" target="_blank" class="btn">Agendar Fecha</a>
+            <div class="hero-image-1"></div>
+        </section>
+
+        <!-- SECCIÓN 2: Versículo y Padres -->
+        <section class="section text-section">
+            <blockquote class="bible-verse">
+                "El amor es sufrido, es benigno... Todo lo sufre, todo lo cree, todo lo espera, todo lo soporta."
+                <span>1 Corintios 13:4-7</span>
+            </blockquote>
             
-            <h3 style="font-weight: 300; font-size: 1rem; margin-top: 40px; letter-spacing: 1px;">MOMENTOS FALTAN...</h3>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <span class="countdown-time" id="days">00</span>
-                    <span class="countdown-label">Días</span>
+            <div class="blessing-container">
+                <p class="blessing-title">Con la bendición de Dios y nuestros queridos padres</p>
+                
+                <div class="parents-grid">
+                    <div class="parents-block">
+                        <h3>Padres de la Novia</h3>
+                        <p>Eduardo Salazar</p>
+                        <p>Rosa García</p>
+                    </div>
+                    <div class="parents-block">
+                        <h3>Padres del Novio</h3>
+                        <p>Walter Díaz</p>
+                        <p>Jessica Huertas</p>
+                    </div>
                 </div>
-                <div class="countdown-item">
-                    <span class="countdown-time" id="hours">00</span>
-                    <span class="countdown-label">Horas</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-time" id="minutes">00</span>
-                    <span class="countdown-label">Min.</span>
-                </div>
-                <div class="countdown-item">
-                    <span class="countdown-time" id="seconds">00</span>
-                    <span class="countdown-label">Seg.</span>
+
+                <div class="witnesses-block">
+                    <h3>En compañía de nuestros testigos</h3>
+                    <p>Víctor Gonzales</p>
+                    <p>Martha Manosalva</p>
+                    <p>José Rojas</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Sección Ceremonia -->
-        <div class="section">
-            <div class="icon">⛪</div>
-            <h2>Ceremonia</h2>
-            <p><strong>Hora:</strong> 5:00 pm</p>
-            <p>Parroquia de la Ciudad, Calle Principal #123</p>
-            <a href="https://maps.google.com" target="_blank" class="btn">Ver Mapa</a>
-            <div class="divider" style="margin-top: 30px;"></div>
-        </div>
+        <!-- SECCIÓN 3: Segunda Foto e Invitación -->
+        <section class="section image-section">
+            <div class="hero-image-2"></div>
+            <div class="wedding-invite-text">
+                <div class="rings-icon">💍</div>
+                <p>Tenemos el agrado de invitarlos a nuestra boda</p>
+                
+                <div class="date-container">
+                    <div class="date-side">Sábado</div>
+                    <div class="date-center">21 <br><span>Febrero 2026</span></div>
+                    <div class="date-side">2026</div>
+                </div>
 
-        <!-- Sección Regalos -->
-        <div class="section" style="background-color: #fbfbfb;">
-            <div class="icon">🎁</div>
+                <!-- Enlace dinámico para agendar la fecha en Google Calendar -->
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Sof%C3%ADa+y+Mateo&dates=20260221T220000Z/20260222T040000Z&details=¡Acompáñanos+en+nuestro+gran+día!&location=Iglesia+Luz+del+Mundo" target="_blank" class="btn btn-secondary">Agendar fecha</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: Cuenta Regresiva -->
+        <section class="section countdown-section">
+            <h2 class="section-title">Momentos faltan...</h2>
+            <div class="countdown-display">
+                <div class="time-block">
+                    <span id="days">00</span>
+                    <label>Días</label>
+                </div>
+                <div class="time-block">
+                    <span id="hours">00</span>
+                    <label>Horas</label>
+                </div>
+                <div class="time-block">
+                    <span id="minutes">00</span>
+                    <label>Minutos</label>
+                </div>
+                <div class="time-block">
+                    <span id="seconds">00</span>
+                    <label>Segundos</label>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: Ceremonia y Recepción con Google Maps -->
+        <section class="section details-section">
+            <div class="detail-block">
+                <div class="detail-icon">⛪</div>
+                <h2>Ceremonia Cristiana</h2>
+                <p><strong>Hora:</strong> 5:00 pm</p>
+                <p>Iglesia "Luz del Mundo"</p>
+                <p class="address">Av. San Martín 456, Ciudad</p>
+                <!-- Reemplaza con el enlace real de la ubicación de tu iglesia -->
+                <a href="https://maps.google.com/?q=Iglesia+Luz+del+Mundo" target="_blank" class="btn btn-primary">📍 Ver Mapa</a>
+            </div>
+
+            <div class="detail-block" style="margin-top: 40px;">
+                <div class="detail-icon">🏢</div>
+                <h2>Recepción</h2>
+                <p><strong>Hora:</strong> 7:30 pm</p>
+                <p>Salón de Eventos "La Mansión"</p>
+                <p class="address">Calle Los Jazmines 789, Ciudad</p>
+                <!-- Reemplaza con el enlace real de la ubicación de tu recepción -->
+                <a href="https://maps.google.com/?q=Salon+de+Eventos+La+Mansion" target="_blank" class="btn btn-primary">📍 Ver Mapa</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: Código de Vestimenta e Itinerario -->
+        <section class="section itinerary-section">
+            <h2>Dress Code</h2>
+            <p class="dress-style">Elegante</p>
+            <div class="dress-icon">👔👗</div>
+            <p class="dress-note">Reservar el color blanco exclusivamente para la novia.</p>
+
+            <h2 style="margin-top: 40px;">Itinerario</h2>
+            <div class="timeline">
+                <div class="timeline-item"><strong>5:00 p.m.</strong> Ceremonia Religiosa</div>
+                <div class="timeline-item"><strong>7:30 p.m.</strong> Recepción</div>
+                <div class="timeline-item"><strong>8:45 p.m.</strong> Brindis</div>
+                <div class="timeline-item"><strong>9:00 p.m.</strong> Vals</div>
+                <div class="timeline-item"><strong>9:30 p.m.</strong> Cena</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: Regalos, Buzón y Canciones -->
+        <section class="section gifts-section">
+            <div class="gift-icon">🎁</div>
             <h2>Regalos</h2>
-            <p>Si deseas hacernos un obsequio, puedes optar por apoyarnos a través de nuestra cuenta bancaria.</p>
-            <button onclick="openModal()" class="btn">Datos Bancarios</button>
-        </div>
+            <p>Si deseas hacernos un obsequio, ponemos a tu disposición nuestras cuentas:</p>
+            <div class="gifts-btn-group">
+                <button onclick="openModal('bank-modal')" class="btn btn-primary">Datos Bancarios</button>
+            </div>
 
-        <!-- Sección RSVP (Confirmar asistencia o sugerencias) -->
-        <div class="section">
-            <div class="icon">✉️</div>
-            <h2>Buzón de Deseos</h2>
-            <p>Nos encantaría leer tus buenos deseos y recibir tus canciones favoritas para la fiesta.</p>
-            <!-- Reemplaza el enlace por el de tu Google Forms o Tally.so -->
-            <a href="https://forms.google.com" target="_blank" class="btn">Dejar Mensaje / Confirmar</a>
-            <p style="font-size: 0.8rem; color: #999; margin-top: 30px;">* Evento exclusivo de adultos</p>
-        </div>
+            <div class="interactive-option" style="margin-top: 40px;">
+                <div class="gift-icon">✉️</div>
+                <h2>Buzón de Deseos</h2>
+                <p>Déjanos un mensaje lleno de cariño que guardaremos en nuestro corazón.</p>
+                <!-- Reemplaza con el enlace de tu Google Forms de deseos -->
+                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_deseos/viewform" target="_blank" class="btn btn-primary">Click Aquí</a>
+            </div>
+
+            <div class="interactive-option" style="margin-top: 40px;">
+                <div class="gift-icon">🎵</div>
+                <h2>Sugerencia de Canciones</h2>
+                <p>¿Qué canción no puede faltar en la pista de baile?</p>
+                <!-- Reemplaza con el enlace de tu Google Forms de canciones -->
+                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_canciones/viewform" target="_blank" class="btn btn-primary">Click Aquí</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8: No Niños y Confirmación de Asistencia -->
+        <section class="section confirmation-section">
+            <div class="no-kids">
+                <h2>No niños</h2>
+                <p>Aunque amamos a los niños, esta será una celebración de adultos.</p>
+            </div>
+
+            <div class="rsvp-container">
+                <h2>Confirmar asistencia</h2>
+                <p>Por favor confírmanos tu asistencia antes del 10 de febrero.</p>
+                <!-- Reemplaza con el enlace de tu Google Forms de asistencia detallada -->
+                <a href="https://docs.google.com/forms/d/e/tu_id_formulario_asistencia/viewform" target="_blank" class="btn btn-primary">Confirmar Aquí</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 9: Cierre de Invitación -->
+        <section class="section footer-section">
+            <div class="hero-image-3"></div>
+            <div class="monogram">S & M</div>
+            <p class="final-text">¡Te Esperamos!</p>
+            <div class="floral-bottom"></div>
+        </section>
 
     </div>
 
-    <!-- Modal de Cuentas Bancarias (Ventana Emergente) -->
-    <div id="bankModal" class="modal">
+    <!-- VENTANA EMERGENTE (Modal de Cuentas Bancarias) -->
+    <div id="bank-modal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 style="margin-bottom: 15px;">Datos Bancarios</h2>
-            <p style="margin-bottom: 10px;"><strong>Banco Central</strong></p>
-            <p style="font-size: 1.1rem; color: #8fa0b5; font-weight: bold; margin-bottom: 15px;">ES12 3456 7890 1234 5678</p>
-            <p>A nombre de: Bety y Carlos</p>
-            <p>¡Muchas gracias por su detalle!</p>
+            <span class="close-btn" onclick="closeModal('bank-modal')">&times;</span>
+            <h2>Datos Bancarios</h2>
+            <div class="account-details">
+                <p><strong>Banco Interbank</strong></p>
+                <p>Cuenta: 123-4567890-1-12</p>
+                <p>CCI: 003-123-4567890112-12</p>
+                <p>A nombre de: Sofía Salazar</p>
+                <hr>
+                <p><strong>Banco BCP</strong></p>
+                <p>Cuenta: 987-6543210-0-98</p>
+                <p>A nombre de: Mateo Díaz</p>
+            </div>
         </div>
     </div>
 
-    <!-- JavaScript para el Reloj y Modales -->
-    <script>
-        // --- 1. CONFIGURACIÓN DEL CONTADOR REGRESIVO ---
-        // Pon aquí la fecha exacta de tu boda (Año, Mes [0-11], Día, Hora, Minuto)
-        // Nota: Enero es 0, Febrero es 1, etc.
-        const weddingDate = new Date(2026, 1, 21, 17, 0, 0).getTime(); 
-
-        const countdownInterval = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = weddingDate - now;
-
-            // Cálculos de tiempo
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1Normally I can help with things like this, but I don't seem to have access to that content. You can try again or ask me for something else.
+    <!-- Archivo lógico de JS -->
+    <script src="script.js"></script>
+</body>
+</html>
