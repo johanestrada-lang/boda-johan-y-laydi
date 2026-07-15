@@ -1,0 +1,313 @@
+/* --- RESET GENERAL --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f2f5;
+    color: #4a5568;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- CONTENEDOR ESTILO CELULAR --- */
+.invitation-container {
+    width: 100%;
+    max-width: 430px; /* Ancho ideal de móvil */
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+    overflow-y: auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+/* --- SECCIONES --- */
+.section {
+    padding: 60px 25px;
+    text-align: center;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* --- TIPOGRAFÍA --- */
+h1.main-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #3b5266; /* Azul acero de las imágenes */
+    font-weight: normal;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #3b5266;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+/* --- BOTONES --- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    width: 80%;
+    max-width: 280px;
+    margin: 10px auto;
+}
+
+.btn-primary {
+    background-color: #7b92a5; /* Color azul de los botones de la imagen */
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(123, 146, 165, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: #5d7589;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #7b92a5;
+    border: 1px solid #7b92a5;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(123, 146, 165, 0.05);
+}
+
+/* --- MARCOS FLORALES Y SECCIONES ESPECIALES --- */
+.floral-top {
+    height: 120px;
+    background-image: url('https://i.ibb.co/6Yh0T79/floral-top-placeholder.png'); /* Puedes reemplazarlo con flores acuarela */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.floral-bottom {
+    height: 120px;
+    background-image: url('https://i.ibb.co/HqG9k7m/floral-bottom-placeholder.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+/* --- IMÁGENES DE FONDO (Efecto rasgado simulado) --- */
+.hero-image-1, .hero-image-2, .hero-image-3 {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Cambia estos enlaces placeholder por fotos reales de los novios */
+.hero-image-1 { background-image: url('https://picsum.photos/id/84/600/800'); }
+.hero-image-2 { background-image: url('https://picsum.photos/id/366/600/800'); }
+.hero-image-3 { background-image: url('https://picsum.photos/id/375/600/800'); }
+
+/* Efecto papel rasgado en la parte inferior de la imagen */
+.hero-image-1::after, .hero-image-2::after, .hero-image-3::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 40%, 90% 85%, 80% 35%, 65% 75%, 50% 30%, 35% 80%, 20% 45%, 10% 85%, 0% 30%);
+}
+
+/* --- CONTADOR --- */
+.countdown-display {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f7f9;
+    padding: 20px 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.time-block {
+    flex: 1;
+    text-align: center;
+}
+
+.time-block span {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #3b5266;
+}
+
+.time-block label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+/* --- DETALLES DE LOGÍSTICA --- */
+.date-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.date-side {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    letter-spacing: 1.5px;
+    padding: 0 15px;
+}
+
+.date-center {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #3b5266;
+    border-left: 1px solid #cbd5e1;
+    border-right: 1px solid #cbd5e1;
+    padding: 0 25px;
+}
+
+.date-center span {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #64748b;
+    display: block;
+}
+
+/* --- LÍNEA DE TIEMPO (ITINERARIO) --- */
+.timeline {
+    border-left: 2px solid #cbd5e1;
+    margin: 30px auto;
+    padding-left: 25px;
+    max-width: 280px;
+    text-align: left;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+}
+
+.timeline-item::before {
+    content: "♥";
+    position: absolute;
+    left: -33px;
+    top: -2px;
+    background-color: #ffffff;
+    color: #7b92a5;
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- VENTANA EMERGENTE (MODAL) --- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+/* --- ELEMENTOS EXTRAS --- */
+.music-btn {
+    width: 55px;
+    height: 55px;
+    background-color: #3b5266;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(59, 82, 102, 0.3);
+}
+
+.bible-verse {
+    font-style: italic;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+.bible-verse span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.monogram {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #3b5266;
+    border: 1px solid #3b5266;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
