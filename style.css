@@ -532,3 +532,17 @@ body {
     display: block;
     object-fit: contain;
 }
+
+.section-with-corner {
+    position: relative; /* Para que la flor se posicione respecto a esta sección */
+}
+
+.corner-flower-top-right {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 90px; /* Ajusta el tamaño que prefieras */
+    height: auto;
+    pointer-events: none; /* Permite hacer clic al texto/botones debajo */
+    z-index: 5;
+}
