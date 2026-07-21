@@ -1,6 +1,6 @@
 // --- 1. CONFIGURACIÓN DEL CONTADOR REGRESIVO ---
 // Modifica los parámetros con la fecha de tu evento (Año, Mes [Enero=0, Febrero=1], Día, Hora, Minutos)
-const weddingDate = new Date(2026, 1, 21, 17, 0, 0).getTime();
+const weddingDate = new Date(2026, 9, 26, 15, 0, 0).getTime();
 
 const countdownInterval = setInterval(function() {
     const now = new Date().getTime();
