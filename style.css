@@ -540,7 +540,7 @@ body {
 }
 
 .top-flower-img {
-    max-width: 100px; /* Puedes subir o bajar este valor según qué tan grande la quieras */
+    max-width: 50px; /* Puedes subir o bajar este valor según qué tan grande la quieras */
     height: auto;
     display: inline-block;
 }
