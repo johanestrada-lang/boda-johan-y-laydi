@@ -654,8 +654,8 @@ body {
 
 /* Control del tamaño y centrado de la imagen del ícono */
 .location-icon-img {
-    width: 5px;        /* Controla el ancho del ícono */
-    height: 5px;       /* Controla el alto del ícono */
+    width: 40px;        /* Controla el ancho del ícono */
+    height: 40px;       /* Controla el alto del ícono */
     object-fit: contain;
     display: inline-block;
     margin-bottom: 5px; /* Espacio sutil entre el ícono y el título */
