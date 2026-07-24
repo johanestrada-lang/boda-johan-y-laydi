@@ -654,8 +654,8 @@ body {
 
 /* Control del tamaño y centrado de la imagen del ícono */
 .location-icon-img {
-    width: 60px;        /* Controla el ancho del ícono */
-    height: 60px;       /* Controla el alto del ícono */
+    width: 70px;        /* Controla el ancho del ícono */
+    height: 70px;       /* Controla el alto del ícono */
     object-fit: contain;
     display: inline-block;
     margin-bottom: 5px; /* Espacio sutil entre el ícono y el título */
@@ -664,11 +664,11 @@ body {
 /* 1. Reducimos el padding de la sección para quitar aire arriba */
 .locations-section {
     position: relative;
-    padding-top: 15px !important;
+    padding-top: 20px !important;
 }
 
 /* 2. Subimos la tarjeta celeste */
 .location-card {
-    margin-top: 5px !important;
+    margin-top: 10px !important;
     position: relative; /* Nos permite posicionar elementos exactamente sobre la tarjeta */
 }
