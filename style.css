@@ -603,3 +603,12 @@ body {
     font-weight: 400;
 }
 
+
+.countdown-section .section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: #d4af37;
+    font-weight: 600;
+    text-transform: uppercase;
+}
