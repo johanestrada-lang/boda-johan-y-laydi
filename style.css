@@ -575,3 +575,21 @@ body {
     color: #d4af37;
     font-size: 2.8rem;
 }
+
+/* Reduce el espacio interno inferior de la primera sección */
+.hero-section {
+    padding-bottom: 30px !important; 
+}
+
+/* Reduce el espacio interno superior de la segunda sección */
+.family-section {
+    padding-top: 30px !important;
+}
+
+.invite-content {
+    margin-top: 40px; /* Aumenta este número si quieres que la separación sea mayor (ej: 50px o 60px) */
+}
+
+.hero-image-2 {
+    margin-bottom: 25px; /* Separa la caja de la foto del texto de abajo */
+}
