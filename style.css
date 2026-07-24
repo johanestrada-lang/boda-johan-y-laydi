@@ -672,3 +672,10 @@ body {
     margin-top: 10px !important;
     position: relative; /* Nos permite posicionar elementos exactamente sobre la tarjeta */
 }
+
+.wedding-date-block .month {
+    font-size: 1.4rem;       /* Aumenta el tamaño de la letra (puedes probar con 1.3rem o 1.4rem) */
+    letter-spacing: 5px;      /* Mantiene un espaciado elegante entre las letras */
+    font-weight: 600;         /* Le da un toque más firme y visible */
+    margin-bottom: 8px;       /* Ajusta el espacio entre el mes y el número 26 */
+}
