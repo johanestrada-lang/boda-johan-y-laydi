@@ -644,8 +644,8 @@ body {
 .side-flower-right {
     position: absolute;
     top: 0;             /* Pegado a la parte superior de la sección */
-    right: -20px;       /* Asomada en el borde derecho */
-    width: 130px;       /* Tamaño de la ilustración */
+    right: -50px;       /* Asomada en el borde derecho */
+    width: 90px;       /* Tamaño de la ilustración */
     height: auto;
     pointer-events: none; /* Permite hacer clic en los botones de abajo */
     z-index: 2;
