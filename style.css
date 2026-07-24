@@ -634,3 +634,20 @@ body {
     margin-top: 5px !important;
     margin-bottom: 15px !important;
 }
+/* Prepara la sección de ubicaciones para el adorno lateral */
+.locations-section {
+    position: relative;
+    overflow: hidden; /* Evita que la flor cree scroll horizontal */
+}
+
+/* Posicionamiento de la flor flores7.png en la esquina superior derecha */
+.side-flower-right {
+    position: absolute;
+    top: 0;             /* Pegado a la parte superior de la sección */
+    right: -20px;       /* Asomada en el borde derecho */
+    width: 130px;       /* Tamaño de la ilustración */
+    height: auto;
+    pointer-events: none; /* Permite hacer clic en los botones de abajo */
+    z-index: 2;
+}
+
