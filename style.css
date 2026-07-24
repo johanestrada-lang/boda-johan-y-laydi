@@ -544,3 +544,34 @@ body {
     height: auto;
     display: inline-block;
 }
+
+
+/* Título de los novios más fluido y romántico */
+.couple-names {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem; /* Aumentamos el tamaño porque las fuentes cursivas suelen verse un poco más pequeñas */
+    line-height: 1.1;
+    color: #0f233a;
+    font-weight: 400;
+}
+
+/* Títulos de cada sección ("Faltan...", "Ceremonia", "Sugerencia de canciones") */
+.section-title, 
+.location-card h2, 
+.dress-code h2, 
+.itinerary-timeline h2, 
+.gift-block h2, 
+.rsvp-card h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #0f233a;
+    letter-spacing: 0; /* Quita el espaciado rígido si lo tenía */
+}
+
+/* El símbolo '&' entre sus nombres */
+.couple-names .and-symbol {
+    font-family: 'Great Vibes', cursive;
+    color: #d4af37;
+    font-size: 2.8rem;
+}
