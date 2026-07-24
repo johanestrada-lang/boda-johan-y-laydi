@@ -612,3 +612,25 @@ body {
     font-weight: 600;
     text-transform: uppercase;
 }
+
+
+/* 1. Reduce el espacio inferior de la sección de la fecha */
+.invite-section {
+    padding-bottom: 0px !important;
+}
+
+/* 2. Quita el margen sobrante del bloque de la fecha */
+.wedding-date-block {
+    margin-bottom: 0px !important;
+}
+
+/* 3. Reduce el espacio superior de la cuenta regresiva */
+.countdown-section {
+    padding-top: 10px !important;
+}
+
+/* 4. Ajusta la distancia del título "FALTAN..." */
+.countdown-section .section-title {
+    margin-top: 5px !important;
+    margin-bottom: 15px !important;
+}
