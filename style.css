@@ -533,4 +533,14 @@ body {
     object-fit: contain;
 }
 
+.top-flower-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
+.top-flower-img {
+    max-width: 160px; /* Puedes subir o bajar este valor según qué tan grande la quieras */
+    height: auto;
+    display: inline-block;
+}
