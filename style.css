@@ -698,3 +698,21 @@ body {
     font-weight: 600;         /* Le da un toque más firme y visible */
     margin-bottom: 8px;       /* Ajusta el espacio entre el mes y el número 26 */
 }
+
+/* Asegura que el contenedor cente bien la imagen */
+.section-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 25px 0;
+    padding: 0; /* Quitamos paddings laterales que puedan encoger la imagen */
+}
+
+/* Define un tamaño fijo igual para todas las flores separadoras */
+.section-divider img {
+    width: 240px !important;     /* Ajusta este valor (ej. 220px, 250px) al tamaño exacto que prefieras */
+    max-width: 85% !important;   /* Evita que toque los bordes en pantallas de celulares muy angostas */
+    height: auto !important;
+    display: block;
+}
