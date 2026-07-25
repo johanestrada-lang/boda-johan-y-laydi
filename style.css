@@ -358,7 +358,7 @@ body {
 /* 1. Cambia la tipografía de "Elegante" a la fuente limpia de la hora */
 .dress-style {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: 600;
     color: #d4af37;           /* Mismo tono dorado */
     text-transform: uppercase;/* Mayúsculas limpias */
@@ -368,7 +368,7 @@ body {
 
 /* 2. Controla el tamaño y alineación del PNG de vestimenta */
 .dress-code-img {
-    width: 50px;              /* Puedes subir a 60px si quieres que se vea más grande */
+    width: 75px;              /* Puedes subir a 60px si quieres que se vea más grande */
     height: auto;
     display: inline-block;
     margin: 10px 0;
