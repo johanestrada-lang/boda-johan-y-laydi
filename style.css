@@ -716,3 +716,53 @@ body {
     height: auto !important;
     display: block;
 }
+
+/* Estilos para el nuevo contenedor de contenido del itinerario */
+.itinerary-content {
+    display: flex; /* Coloca la línea de tiempo y la imagen lado a lado */
+    align-items: flex-start; /* Alinea los elementos al inicio superior */
+    justify-content: space-between; /* Deja espacio entre la línea de tiempo y la imagen */
+    gap: 30px; /* Espacio mínimo entre los dos elementos */
+    margin-top: 30px; /* Espacio superior para separarlo del título */
+}
+
+/* Estilos para el contenedor de la imagen */
+.itinerary-image {
+    flex: 0 0 30%; /* La imagen ocupará un ancho base del 30% (ajustable) */
+    max-width: 250px; /* Ancho máximo para que no crezca demasiado en pantallas grandes */
+    text-align: center; /* Centra la imagen dentro de su contenedor */
+}
+
+/* Estilos para la imagen PNG */
+.itinerary-png {
+    width: 100%; /* La imagen se ajustará al ancho de su contenedor (.itinerary-image) */
+    height: auto; /* Mantiene la proporción de la imagen */
+    opacity: 0.8; /* (Opcional) Hace la imagen ligeramente sutil para no distraer demasiado */
+}
+
+/* -- DISEÑO ADAPTATIVO (MEDIA QUERIES) -- */
+
+/* Para pantallas de tablets y laptops medianas */
+@media screen and (max-width: 900px) {
+    .itinerary-content {
+        gap: 20px; /* Reduce el espacio */
+    }
+    .itinerary-image {
+        flex: 0 0 40%; /* La imagen ocupa un poco más de ancho relativo */
+    }
+}
+
+/* Para pantallas de móviles */
+@media screen and (max-width: 600px) {
+    .itinerary-content {
+        flex-direction: column; /* Coloca los elementos uno debajo del otro (vertical) */
+        align-items: center; /* Centra los elementos verticalmente */
+        gap: 40px; /* Espacio entre la línea de tiempo y la imagen */
+    }
+
+    .itinerary-image {
+        width: 100%; /* El contenedor de imagen ocupa todo el ancho */
+        max-width: 180px; /* Reduce el tamaño máximo en móviles */
+        order: -1; /* (Opcional) Coloca la imagen ANTES de la línea de tiempo en móviles */
+    }
+}
