@@ -759,28 +759,19 @@ body {
 
 /* -- DISEÑO ADAPTATIVO (MEDIA QUERIES) -- */
 
-/* Para pantallas de tablets y laptops medianas */
+/* Aplica para tablets, laptops y teléfonos móviles por igual */
 @media screen and (max-width: 900px) {
     .itinerary-content {
-        gap: 20px; /* Reduce el espacio */
-    }
-    .itinerary-image {
-        flex: 0 0 40%; /* La imagen ocupa un poco más de ancho relativo */
-    }
-}
-
-/* Para pantallas de móviles */
-@media screen and (max-width: 600px) {
-    .itinerary-content {
-        flex-direction: column; /* Coloca los elementos uno debajo del otro (vertical) */
-        align-items: center; /* Centra los elementos verticalmente */
-        gap: 40px; /* Espacio entre la línea de tiempo y la imagen */
+        flex-direction: row !important;      /* Mantiene la imagen y el texto en la misma fila */
+        align-items: center !important;     /* Centra verticalmente las copas a la mitad del itinerario */
+        justify-content: space-between;
+        gap: 15px !important;               /* Reduce el espacio entre ambos para pantallas angostas */
     }
 
     .itinerary-image {
-        width: 100%; /* El contenedor de imagen ocupa todo el ancho */
-        max-width: 180px; /* Reduce el tamaño máximo en móviles */
-        order: -1; /* (Opcional) Coloca la imagen ANTES de la línea de tiempo en móviles */
+        flex: 0 0 35%;                      /* Proporción para la imagen a la derecha */
+        max-width: 110px !important;        /* Ajusta el tamaño de las copas para que no aprieten el texto */
+        order: unset !important;            /* Asegura que no se mueva arriba */
     }
 }
 
