@@ -347,11 +347,30 @@ body {
 }
 
 /* --- CÓDIGO DE VESTIMENTA & ITINERARIO --- */
-.dress-style {
+/* --- .dress-style {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     font-style: italic;
     color: #d4af37;
+    margin: 10px 0;
+}--- */
+
+/* 1. Cambia la tipografía de "Elegante" a la fuente limpia de la hora */
+.dress-style {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #d4af37;           /* Mismo tono dorado */
+    text-transform: uppercase;/* Mayúsculas limpias */
+    letter-spacing: 2px;      /* Espaciado elegante entre letras */
+    margin: 8px 0 15px 0;
+}
+
+/* 2. Controla el tamaño y alineación del PNG de vestimenta */
+.dress-code-img {
+    width: 50px;              /* Puedes subir a 60px si quieres que se vea más grande */
+    height: auto;
+    display: inline-block;
     margin: 10px 0;
 }
 
