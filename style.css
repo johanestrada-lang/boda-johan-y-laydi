@@ -770,7 +770,7 @@ body {
 
     .itinerary-image {
         flex: 0 0 35%;                      /* Proporción para la imagen a la derecha */
-        max-width: 110px !important;        /* Ajusta el tamaño de las copas para que no aprieten el texto */
+        max-width: 155px !important;        /* Ajusta el tamaño de las copas para que no aprieten el texto */
         order: unset !important;            /* Asegura que no se mueva arriba */
     }
 }
