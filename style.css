@@ -783,3 +783,28 @@ body {
         order: -1; /* (Opcional) Coloca la imagen ANTES de la línea de tiempo en móviles */
     }
 }
+
+/* --- TARJETA DE REGALOS (ESTILO RECEPCIÓN) --- */
+.gift-card {
+    position: relative;
+    overflow: hidden; /* Mantiene la flor dentro de las esquinas redondeadas de la tarjeta */
+}
+
+/* Posiciona la flor en la esquina superior derecha dentro de la tarjeta */
+.gift-card .card-top-flower {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px; /* Ajusta el tamaño según como se vea en Recepción */
+    height: auto;
+    pointer-events: none;
+}
+
+/* Ajuste del texto interno para que no se pegue al botón ni a las flores */
+.gift-text {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #475569;
+    margin: 15px 0 20px 0;
+    padding: 0 10px;
+}
