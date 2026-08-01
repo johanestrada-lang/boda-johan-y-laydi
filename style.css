@@ -886,3 +886,52 @@ img.photo {
     border: none !important;
     box-shadow: none !important;
 }
+
+/* --- 1. ELIMINAR ESQUINAS Y MARCOS DORADOS --- */
+
+/* Oculta los elementos de esquina dorados */
+.corner, 
+.corner-tl, .corner-tr, .corner-bl, .corner-br,
+[class*="corner"],
+.gold-frame,
+.photo-frame {
+    display: none !important;
+    border: none !important;
+}
+
+/* Oculta marcos generados por pseudo-elementos */
+.photo-container::before, .photo-container::after,
+.hero-image::before, .hero-image::after,
+.hero-image-2::before, .hero-image-2::after,
+.hero-image-3::before, .hero-image-3::after {
+    display: none !important;
+    content: none !important;
+}
+
+
+/* --- 2. MOSTRAR FOTOS EN TAMAÑO COMPLETO (SIN RECORTES) --- */
+
+/* Si usas etiquetas <img> directas en el HTML */
+.photo-container img, 
+.photo-section img,
+img.hero-image,
+img.photo {
+    width: 100% !important;
+    height: auto !important;         /* Ajusta la altura automáticamente para mostrar toda la foto */
+    max-height: none !important;     /* Quita cualquier límite de altura previa */
+    object-fit: contain !important;  /* Mantiene la proporción original completa */
+    border-radius: 12px !important;  /* Mantiene los bordes suavemente redondeados */
+}
+
+/* Si usas divs con background-image */
+.hero-image, 
+.hero-image-2, 
+.hero-image-3 {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 480px !important;    /* Le da el alto suficiente en móviles para no encogerse */
+    background-size: contain !important; /* Muestra el 100% de la imagen sin recortar bordes */
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px !important;
+}
