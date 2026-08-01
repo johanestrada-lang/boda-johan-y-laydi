@@ -949,7 +949,7 @@ img.photo {
 .location-card p strong,
 .location-card span,
 [class*="time"] {
-    font-size: 1.10rem !important; /* Aumenta el tamaño para darle mayor presencia */
+    font-size: 1.00rem !important; /* Aumenta el tamaño para darle mayor presencia */
     font-weight: 500 !important;   /* Pone la hora en negrita para destacar */
     letter-spacing: 1px;
     margin: 8px 0;
@@ -974,4 +974,13 @@ img.photo {
 .section:has(.hero-image-4) {
     padding-top: 5px !important;    /* Ajusta el margen superior de la foto */
     padding-bottom: 5px !important; /* Ajusta el margen inferior si hay más contenido */
+}
+
+/* --- TAMAÑO EXCLUSIVO PARA LA HORA DE RECEPCIÓN --- */
+.event-time-highlight {
+    font-size: 1.4rem !important;  /* ⬆️ Aumenta el tamaño (puedes probar con 1.6rem o 1.8rem si lo quieres más grande) */
+    font-weight: 700 !important;   /* Lo mantiene en negrita para destacar */
+    color: #c5a059 !important;     /* Mantiene el color dorado */
+    margin: 10px 0 !important;     /* Le da un pequeño espacio arriba y abajo */
+    display: block !important;
 }
