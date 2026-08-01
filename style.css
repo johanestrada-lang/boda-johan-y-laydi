@@ -957,19 +957,21 @@ img.photo {
 }
 
 
-/* --- REDUCCIÓN DE ESPACIO ENTRE SECCIONES --- */
+/* --- REDUCCIÓN DE ESPACIO ENTRE FLORES Y FOTOS --- */
 
-/* 1. Control general del espacio vertical de cada sección */
-.section,
-.photo-section,
-[class*="-section"] {
-    padding-top: 15px !important;    /* Reduce la distancia superior (antes solía ser 30px - 50px) */
-    padding-bottom: 15px !important; /* Reduce la distancia inferior */
-}
-
-/* 2. Control del margen en los separadores florales */
+/* 1. Reduce el espacio que deja la flor hacia abajo */
 .section-divider,
 .top-flower-container {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;  /* Reduce la distancia hacia la foto siguiente */
+    margin-top: 5px !important;     /* Reduce la distancia desde la foto anterior */
+}
+
+/* 2. Quita el relleno superior de los contenedores de las fotos */
+.photo-section,
+.section:has(.hero-image),
+.section:has(.hero-image-2),
+.section:has(.hero-image-3),
+.section:has(.hero-image-4) {
+    padding-top: 5px !important;    /* Ajusta el margen superior de la foto */
+    padding-bottom: 5px !important; /* Ajusta el margen inferior si hay más contenido */
 }
