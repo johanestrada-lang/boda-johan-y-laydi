@@ -316,7 +316,7 @@ body {
 
 /* --- CARDS DE UBICACIÓN --- */
 .location-card {
-    background-color: #f8fafc;
+    background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 25px 15px;
@@ -934,4 +934,17 @@ img.photo {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px !important;
+}
+
+/* 2. Aumentar el tamaño del texto de la hora (3:00 PM) */
+.time,
+.event-time,
+.location-card p strong,
+.location-card span,
+[class*="time"] {
+    font-size: 1.25rem !important; /* Aumenta el tamaño para darle mayor presencia */
+    font-weight: 700 !important;   /* Pone la hora en negrita para destacar */
+    letter-spacing: 1px;
+    margin: 8px 0;
+    display: block;
 }
