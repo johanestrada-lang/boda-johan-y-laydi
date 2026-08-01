@@ -828,3 +828,17 @@ body {
 .rsvp-section {
     padding-top: 20px !important;
 }
+
+/* --- AJUSTES DE ESPACIADO EN SECCIÓN CONFIRMACIÓN Y FOTO --- */
+
+/* 1. Añade espacio entre el botón azul y la flor decorativa */
+.rsvp-section .btn {
+    margin-bottom: 25px !important; /* Despeja el botón de la flor inferior */
+}
+
+/* 2. Control del separador de flor */
+.section-divider {
+    margin-top: 10px !important;
+    margin-bottom: 5px !important; /* Reduce la distancia hacia abajo */
+    text-align: center;
+}
