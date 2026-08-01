@@ -800,3 +800,31 @@ body {
     margin: 15px 0 20px 0;
     padding: 0 10px;
 }
+
+/* --- ESTILOS SECCIÓN SOLO ADULTOS --- */
+
+/* Aplica la misma fuente cursiva al título "Solo adultos" */
+.kids-warning h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #0f233a;
+    margin-bottom: 10px;
+}
+
+/* Control del tamaño y alineación de la imagen PNG debajo del título */
+.adults-icon-img {
+    width: 65px;          /* Ajusta el ancho de tu PNG aquí */
+    height: auto;
+    display: block;
+    margin: 10px auto 15px auto; /* Centra la imagen y le da espacio vertical */
+}
+
+/* Separación visual entre las secciones */
+.adults-section {
+    padding-bottom: 20px !important;
+}
+
+.rsvp-section {
+    padding-top: 20px !important;
+}
