@@ -5,21 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestra Boda | JOHAN & LAYDI</title>
     
-    <!-- Fuentes premium y elegantes -->
+    <!-- Carga optimizada de fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-    <!-- Agregamos 'Great Vibes' para una caligrafía fluida y elegante -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-    
-    <!-- Archivo de estilos externo -->
+    <!-- Estilos externos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Nota: Sube un archivo de audio llamado 'musica.mp3' a tu GitHub en la misma carpeta raíz -->
-    <audio id="bg-music" loop>
+    <audio id="bg-music" loop preload="none">
         <source src="musica1.mp3" type="audio/mpeg">
     </audio>
 
@@ -27,11 +23,8 @@
 
         <!-- SECCIÓN 1: Portada y Reproductor -->
         <section class="section hero-section">
-            <div class="gold-corner top-left"></div>
-            <div class="gold-corner top-right"></div>
-
             <div class="top-flower-container">
-            <img src="flores6.png" alt="Decoración floral" class="top-flower-img">
+                <img src="flores6.png" alt="Decoración floral" class="top-flower-img">
             </div>
             
             <p class="pre-title">¡NOS CASAMOS!</p>
@@ -39,23 +32,17 @@
             
             <p class="music-instruction">Presiona el corazón para escuchar nuestra canción</p>
             <div class="music-player">
-                <button class="music-btn" id="play-pause-btn">♥</button>
-            <!-- <span class="song-title">Que suerte tenerte - Fonseca</span> -->
-            
+                <button class="music-btn" id="play-pause-btn" aria-label="Reproducir música">♥</button>
             </div>
             
-            <!-- Foto de portada vertical -->
             <div class="hero-image border-gold-glow"></div>
-            
-             <!-- <div class="gold-corner bottom-left"></div> -->
-             <!-- <div class="gold-corner bottom-right"></div> -->
         </section>
 
         <!-- SECCIÓN 2: Versículo y Padres -->
         <section class="section family-section">
-            
             <div class="top-flower-container">
-            <img src="flores6.png" alt="Decoración floral" class="top-flower-img"></div>
+                <img src="flores6.png" alt="Decoración floral" class="top-flower-img" loading="lazy">
+            </div>
             
             <div class="divider-gold"></div>
             <blockquote class="wedding-verse">
@@ -64,9 +51,8 @@
             </blockquote>
             <div class="divider-gold"></div>
 
-            <!-- SEPARADOR FLORAL -->
             <div class="section-divider">
-                <img src="flores1.png" alt="Separador floral">
+                <img src="flores1.png" alt="Separador floral" loading="lazy">
             </div>
             
             <div class="parents-container">
@@ -89,12 +75,10 @@
                 <h2 class="section-title">Con la guía de nuestros pastores</h2>
                 <div class="parents-row">
                     <div class="parents-column">
-                        <!--<h3>Padres del novio</h3> -->
                         <p>Carlos Panaifo</p>
                         <p>Regina Chimpay</p>
                     </div>
                     <div class="parents-column">
-                        <!--<h3>Padres de la novia</h3> -->
                         <p>Roberto Peralta</p>
                         <p>Astrid Montenegro</p>
                     </div>
@@ -102,15 +86,14 @@
             </div>
 
             <div class="top-flower-container">
-            <img src="flores6.png" alt="Decoración floral" class="top-flower-img"></div>
-            
+                <img src="flores6.png" alt="Decoración floral" class="top-flower-img" loading="lazy">
+            </div>
+        </section>
+
         <!-- SECCIÓN 3: Segunda Foto e Invitación -->
         <section class="section invite-section">
-            <div class="hero-image-2 border-gold-glow">
-            
-            </div>
+            <div class="hero-image-2 border-gold-glow"></div>
 
-            
             <div class="invite-content">
                 <p class="invite-text">Con inmensa alegría y amor, te invitamos a celebrar el inicio de nuestra historia juntos.</p>
                 <div class="wedding-date-block">
@@ -121,10 +104,6 @@
                         <div class="date-year">2026</div>
                     </div>
                 </div>
-
-                <!-- Botón dinámico para agendar la boda en Google Calendar -->
-                
-                  <!-- <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Novio+y+Novia&dates=20260221T220000Z/20260222T040000Z&details=¡Te+esperamos+en+nuestro+gran+día!&location=Ubicacion+de+la+Iglesia" target="_blank" class="btn btn-gold">Agendar Fecha</a> -->
             </div>
         </section>
 
@@ -151,59 +130,42 @@
             </div>
         </section>
 
-        <!-- SECCIÓN 5: Ubicaciones e Itinerario -->
+        <!-- SECCIÓN 5: Ubicación -->
         <section class="section locations-section">
-            
-            <!-- FLOR DECORATIVA EN LA ESQUINA DERECHA -->
-            <img src="flores7.png" class="side-flower-right" alt="Decoración floral">
+            <img src="flores7.png" class="side-flower-right" alt="Decoración floral" loading="lazy">
             <div class="location-card">
-            <!-- Reemplazamos el emoji por la imagen PNG -->
                 <div class="location-icon">
-                    <img src="recepcion2.png" alt="Ícono de iglesia" class="location-icon-img">
+                    <img src="recepcion2.png" alt="Ícono de recepción" class="location-icon-img" loading="lazy">
                 </div>
             
                 <h2>Recepción</h2>
                 <p class="event-time-highlight">3:00 PM</p>
                 <p class="place-name">Hotel Piedra Wasi Ecolodge</p>
                 <p class="address">Recoleta 223, Urubamba</p>
-                <!-- Reemplaza con tu enlace real de Google Maps -->
-                <a href="https://maps.app.goo.gl/fc67ufXAgYyzrN9Z8?g_st=awb" target="_blank" class="btn btn-blue">Ver Ubicación</a>
-            </div>
-
-         <!--   <div class="location-card" style="margin-top: 50px;">
-                <div class="location-icon">🍷</div>
-                <h2>Recepción</h2>
-                <p class="time">Hora: 3:00 PM</p>
-                <p class="place-name">Salón de Eventos "La Mansión"</p>
-                <p class="address">Dirección del salón de eventos #456, Ciudad</p>
-                <!-- Reemplaza con tu enlace real de Google Maps -->
-                <!--<a href="https://maps.google.com" target="_blank" class="btn btn-blue">Ver Ubicación</a>
+                <a href="https://maps.app.goo.gl/fc67ufXAgYyzrN9Z8?g_st=awb" target="_blank" rel="noopener" class="btn btn-blue">Ver Ubicación</a>
             </div>
         </section>
 
-        <!-- SECCIÓN 6: Código de Vestimenta e Itinerario -->
+        <!-- SECCIÓN 6: Dress Code e Itinerario -->
         <section class="section dress-itinerary-section">
             <div class="dress-code">
                 <h2>Dress Code</h2>
                 <p class="dress-style">ELEGANTE</p>
 
-                <!-- Reemplazamos los emojis por la imagen PNG -->
                 <div class="dress-icons">
-                    <img src="dresscode.png" alt="Código de vestimenta" class="dress-code-img">
+                    <img src="dresscode.png" alt="Código de vestimenta" class="dress-code-img" loading="lazy">
                 </div>
-                <!-- <div class="dress-icons">👔 👗</div> -->
                 
                 <p class="dress-rules">Reservar el color blanco exclusivamente para la novia.</p>
             </div>
 
-            <!-- SEPARADOR FLORAL -->
             <div class="section-divider">
-                <img src="flores1.png" alt="Separador floral">
+                <img src="flores1.png" alt="Separador floral" loading="lazy">
             </div>
             
             <div class="itinerary-timeline">
                 <h2>Itinerario</h2>
-                <div class="itinerary-content"> <!-- Nuevo contenedor flexible -->
+                <div class="itinerary-content">
                     <div class="timeline">
                         <div class="timeline-step">
                             <span class="step-time">3:00 PM</span>
@@ -226,43 +188,24 @@
                             <p class="step-desc">Fiesta</p>
                         </div>
                     </div>
-                    <!-- IMAGEN DECORATIVA A LA DERECHA -->
                     <div class="itinerary-image">
-                        <img src="brindis.png" alt="Copas de brindis" class="itinerary-png">
+                        <img src="brindis.png" alt="Copas de brindis" class="itinerary-png" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECCIÓN 7: Regalos y Dinámicas -->
-        <!--<section class="section gifts-section">
-            <div class="gift-block">
-                <div class="gift-icon">🎁</div>
-                <h2>Sugerencia de regalos</h2>
-                <p>Su presencia es nuestro mayor regalo, pero si desean tener un detalle especial con nosotros, lo recibiremos con mucho amor y gratitud. Gracias por tu muestra de cariño.</p>
-                <button onclick="openModal('bank-modal')" class="btn btn-gold">Datos Bancarios</button>
-            </div>
-
-        </section>-->
-
-   <!-- SECCIÓN 7: Regalos -->
+        <!-- SECCIÓN 7: Regalos -->
         <section class="section gifts-section">
             <div class="location-card gift-card">
-                <!-- Flor decorativa en la esquina superior derecha -->
-                <img src="flores7.png" class="card-top-flower" alt="Flor decorativa">
+                <img src="flores7.png" class="card-top-flower" alt="Flor decorativa" loading="lazy">
+                <img src="regalo.png" class="location-icon-img" alt="Ícono Regalo" loading="lazy">
                 
-                <!-- Ícono del regalo -->
-                <img src="regalo.png" class="location-icon-img" alt="Ícono Regalo">
-                
-                <!-- Título -->
                 <h2>Regalos</h2>
-                
-                <!-- Texto descriptivo -->
                 <p class="address gift-text">
                     Tu presencia es nuestro mayor regalo, pero si deseas tener un detalle especial con nosotros, lo recibiremos con mucho amor y gratitud.
                 </p>
                 
-                <!-- Botón azul -->
                 <button onclick="openModal('bank-modal')" class="btn btn-blue">
                     DATOS BANCARIOS
                 </button>
@@ -273,50 +216,44 @@
         <section class="section adults-section">
             <div class="kids-warning">
                 <h2>Solo adultos</h2>
-                <!-- Imagen PNG debajo del título (cambia 'icono-adultos.png' por el nombre de tu archivo) -->
-                <img src="niños.png" class="adults-icon-img" alt="Ícono Solo Adultos">
+                <img src="niños.png" class="adults-icon-img" alt="Ícono Solo Adultos" loading="lazy">
                 <p>Apreciamos profundamente a sus pequeños; sin embargo, con el deseo de que todos puedan disfrutar de una velada tranquila y especial, este evento será exclusivamente para adultos.</p>
             </div>
         </section>
         
-        <!-- SEPARADOR FLORAL -->
         <div class="section-divider">
-            <img src="flores1.png" alt="Separador floral">
+            <img src="flores1.png" alt="Separador floral" loading="lazy">
         </div>
         
-        <!-- SECCIÓN 9: RSVP / Confirmar Asistencia -->
+        <!-- SECCIÓN 9: RSVP -->
         <section class="section rsvp-section">
             <div class="rsvp-card">
                 <h2>Confirmar Asistencia</h2>
                 <p>Por favor, confírmanos tu presencia antes del 31 de agosto de 2026 completando este formulario.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLoS8daTViWa2qdCkOhoK8uTAYqHnPoGH8tipzF5s152QWuA/viewform?usp=publish-editor" target="_blank" class="btn btn-blue">Confirmar aquí</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLoS8daTViWa2qdCkOhoK8uTAYqHnPoGH8tipzF5s152QWuA/viewform?usp=publish-editor" target="_blank" rel="noopener" class="btn btn-blue">Confirmar aquí</a>
             </div>
             <div class="top-flower-container">
-            <img src="flores6.png" alt="Decoración floral" class="top-flower-img"></div>
+                <img src="flores6.png" alt="Decoración floral" class="top-flower-img" loading="lazy">
+            </div>
         </section>
 
-        <!-- SECCIÓN 9: Despedida -->
+        <!-- SECCIÓN 10: Despedida -->
         <section class="section footer-section">
-            <div class="gold-corner top-left"></div>
-            <div class="gold-corner top-right"></div>
-            
             <div class="hero-image-3 border-gold-glow"></div>
 
             <div class="top-flower-container">
-            <img src="flores6.png" alt="Decoración floral" class="top-flower-img"></div>
+                <img src="flores6.png" alt="Decoración floral" class="top-flower-img" loading="lazy">
+            </div>
             
             <div class="hero-image-4"></div>
             
             <div class="monogram-circle">J & L</div>
             <p class="final-words">¡Gracias por ser parte de nuestra historia!</p>
-            
-            <div class="gold-corner bottom-left"></div>
-            <div class="gold-corner bottom-right"></div>
         </section>
 
     </div>
 
-    <!-- VENTANA MODAL (Cuentas Bancarias) -->
+    <!-- MODAL DE BANCOS -->
     <div id="bank-modal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal('bank-modal')">&times;</span>
@@ -338,17 +275,16 @@
                 </div>
                 
                 <hr class="modal-divider">
+                
                 <div class="bank-item">
                     <p class="bank-name">Yape</p>
                     <p class="bank-account">Celular: +51 941 263 092</p>
                     <p class="bank-owner">Titular: Johan Estrada Alata</p>
-
+                </div>
                 <div class="bank-item">
                     <p class="bank-name">Yape</p>
                     <p class="bank-account">Celular: +51 936 000 493</p>
                     <p class="bank-owner">Titular: Laydi Judith Cruz Mamani</p>
-                </div>
-                    
                 </div>
             </div>
             
@@ -356,7 +292,6 @@
         </div>
     </div>
 
-    <!-- Archivo lógico JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
