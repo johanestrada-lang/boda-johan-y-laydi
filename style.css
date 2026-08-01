@@ -955,3 +955,21 @@ img.photo {
     margin: 8px 0;
     display: block;
 }
+
+
+/* --- REDUCCIÓN DE ESPACIO ENTRE SECCIONES --- */
+
+/* 1. Control general del espacio vertical de cada sección */
+.section,
+.photo-section,
+[class*="-section"] {
+    padding-top: 15px !important;    /* Reduce la distancia superior (antes solía ser 30px - 50px) */
+    padding-bottom: 15px !important; /* Reduce la distancia inferior */
+}
+
+/* 2. Control del margen en los separadores florales */
+.section-divider,
+.top-flower-container {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
