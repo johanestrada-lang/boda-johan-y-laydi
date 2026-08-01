@@ -603,7 +603,7 @@ body {
 
 /* Reduce el espacio interno superior de la segunda sección */
 .family-section {
-    padding-top: 30px !important;
+    padding-top: 15px !important;
 }
 
 .invite-content {
@@ -684,7 +684,7 @@ body {
 /* 1. Reducimos el padding de la sección para quitar aire arriba */
 .locations-section {
     position: relative;
-    padding-top: 20px !important;
+    padding-top: 15px !important;
 }
 
 /* 2. Subimos la tarjeta celeste */
@@ -823,11 +823,11 @@ body {
 
 /* Separación visual entre las secciones */
 .adults-section {
-    padding-bottom: 20px !important;
+    padding-bottom: 10px !important;
 }
 
 .rsvp-section {
-    padding-top: 20px !important;
+    padding-top: 15px !important;
 }
 
 /* --- AJUSTES DE ESPACIADO EN SECCIÓN CONFIRMACIÓN Y FOTO --- */
@@ -932,7 +932,7 @@ img.photo {
     width: 100% !important;
     height: auto !important;
     min-height: 480px !important;    /* Le da el alto suficiente en móviles para no encogerse */
-    background-size: contain !important; /* Muestra el 100% de la imagen sin recortar bordes */
+    background-size: cover !important; /* contain: Muestra el 100% de la imagen sin recortar bordes */
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 12px !important;
