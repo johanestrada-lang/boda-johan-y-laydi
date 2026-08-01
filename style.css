@@ -778,17 +778,18 @@ body {
 /* --- TARJETA DE REGALOS (ESTILO RECEPCIÓN) --- */
 .gift-card {
     position: relative;
-    overflow: hidden; /* Mantiene la flor dentro de las esquinas redondeadas de la tarjeta */
+    overflow: visible !important; /* Permite que las flores sobresalgan de la tarjeta */
 }
 
-/* Posiciona la flor en la esquina superior derecha dentro de la tarjeta */
+/* Posiciona la flor sobresaliendo en la esquina superior derecha */
 .gift-card .card-top-flower {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 110px; /* Ajusta el tamaño según como se vea en Recepción */
+    top: -15px !important;    /* Sube la flor para que la rama abrace la esquina */
+    right: -15px !important;  /* La desplaza a la derecha para calzar afuera */
+    width: 150px !important;  /* Agranda la imagen para dar más presencia */
     height: auto;
     pointer-events: none;
+    z-index: 10;              /* Asegura que quede por encima de la tarjeta */
 }
 
 /* Ajuste del texto interno para que no se pegue al botón ni a las flores */
