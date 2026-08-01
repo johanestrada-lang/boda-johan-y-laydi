@@ -221,7 +221,7 @@ body {
     width: 100% !important;
     height: auto !important;
     min-height: 480px !important;
-    background-size: cover !important;
+    background-size: contain !important;
     background-repeat: no-repeat;
     background-position: center !important;
     border-radius: 12px !important;
