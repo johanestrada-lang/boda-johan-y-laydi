@@ -843,37 +843,46 @@ body {
     text-align: center;
 }
 
-/* --- LIMPIEZA VISUAL DE FOTOS Y DECORACIONES --- */
+/* --- FIX DEFINITIVO PARA FOTOS ORIGINALES (SIN FILTROS NI RECORTES) --- */
 
-/* 1. Elimina las esquinas doradas decorativas */
-.corner, 
-.corner-tl, .corner-tr, .corner-bl, .corner-br,
-[class*="corner"] {
+/* 1. Elimina cualquier superposición de capa (overlay) o sombra que le reste color/brillo */
+.hero-image::before, .hero-image::after,
+.hero-image-2::before, .hero-image-2::after,
+.hero-image-3::before, .hero-image-3::after,
+.photo-container::before, .photo-container::after,
+.photo-overlay, .overlay {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    opacity: 0 !important;
+}
+
+/* 2. Remueve divisores en forma de serrucho/ondas (SVG superpuestos) */
+.shape-divider, 
+.custom-shape-divider-bottom,
+.wave-divider,
+.zigzag-divider,
+svg[class*="divider"],
+.hero-image + svg,
+.photo-container svg {
     display: none !important;
 }
 
-/* 2. Quita bordes dorados, recortes (serrucho/clip-path) y efectos acuarela de las fotos */
+/* 3. Restablece la foto limpia, rectangular y con sus colores 100% reales */
 .hero-image, 
 .hero-image-2, 
 .hero-image-3,
 .photo-container,
-.photo-frame,
+.photo-container img,
 img.photo {
-    border: none !important;                  /* Quita cualquier borde dorado */
-    box-shadow: none !important;              /* Quita sombras de marco */
-    clip-path: none !important;               /* Elimina la silueta en serrucho inferior */
-    -webkit-clip-path: none !important;       
-    mask-image: none !important;              /* Quita máscaras con efectos de bordes */
-    filter: none !important;                  /* Quita efectos o filtros tipo acuarela */
-    border-radius: 12px !important;           /* Mantiene las 4 esquinas suavemente redondeadas */
-    overflow: hidden;
-}
-
-/* 3. En caso de que el marco dorado sea un contenedor padre con psuedoelementos ::before o ::after */
-.photo-container::before,
-.photo-container::after,
-.hero-image::before,
-.hero-image::after {
-    display: none !important;
-    content: none !important;
+    clip-path: none !important;
+    -webkit-clip-path: none !important;
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
+    filter: none !important;
+    mix-blend-mode: normal !important; /* Asegura que los colores no se mezclen con el fondo */
+    opacity: 1 !important;             /* Mantiene la foto con la claridad original */
+    border-radius: 12px !important;    /* Bordes suaves rectangulares */
+    border: none !important;
+    box-shadow: none !important;
 }
